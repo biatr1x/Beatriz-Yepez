@@ -6,20 +6,38 @@
       style="width: 200px; height: 200px"
     >-->
     <div class="q-pa-lg row items-start q-gutter-lg">
-        <q-card class="my-card bg-secondary">
+        <q-card class="my-card bg-grey-5">
             <q-card-section>
                 <div class="text-h6">Ingrese los datos </div>
             </q-card-section>
             <q-card-section>
             <!--formulario-->
-                <q-input v-model="nomb1" label="Primer Nombre" stack-label :dense="dense" />
-                <q-input v-model="nomb2" label="Segundo Nombre" stack-label :dense="dense" />
-                <q-input v-model="apell1" label="Primer Apellido" stack-label :dense="dense" />
+            <div class="row q-col-gutter-lg">
+              <div class="col-3 q-pb-md">
+                 <q-input v-model="nomb1" label="Primer Nombre" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
+                 <q-input v-model="nomb2" label="Segundo Nombre" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
+                 <q-input v-model="apell1" label="Primer Apellido" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
                 <q-input v-model="apell2" label="Segundo Apellido" stack-label :dense="dense" />
-                <q-select v-model="tipoident" :options="options" label="Tipo de identificacion" />
-                <q-input v-model="ident" label="Identificacion" stack-label :dense="dense" />
-                <q-input v-model="gmail" label="Correo Electronico" stack-label :dense="dense" />
-                <q-input v-model="telf" label="Telefono" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
+                 <q-select v-model="tipoident" :options="options" label="Tipo de identificacion" />
+              </div>
+              <div class="col-3 q-pb-xl">
+                 <q-input v-model="ident" label="Identificacion" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
+                 <q-input v-model="gmail" label="Correo Electronico" stack-label :dense="dense" />
+              </div>
+              <div class="col-3">
+                  <q-input v-model="telf" label="Telefono" stack-label :dense="dense" />
+              </div>
+            </div>
                 <q-separator dark />
                 <q-date v-model= "date" />
             </q-card-section>
